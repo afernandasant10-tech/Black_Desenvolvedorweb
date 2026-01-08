@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Página de Notícias</title>
+       <style>
+        /* 1. Estilização Geral (Reset básico) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* 2. Estilização do Menu (Geralmente o Exercício 9) */
+        nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex; /* Deixa os itens lado a lado */
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            color: rgb(164, 254, 175);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* 3. Estilização do Botão (Exercício 10 da imagem) */
+        .btn {
+            background-color: #27ae60; /* Cor de fundo */
+            color: white;              /* Cor do texto */
+            padding: 12px 24px;        /* Padding */
+            border-radius: 20px;       /* Bordas arredondadas */
+            cursor: pointer;           /* Cursor pointer */
+            border: none;
+            font-weight: bold;
+            transition: 0.3s;          /* Suaviza a troca de cor */
+        }
+
+        /* Efeito hover com alteração de cor */
+        .btn:hover {
+            background-color: #219150;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+
+        /* 4. Layout das Notícias */
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            display: flex;
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        section { flex: 3; background: white; padding: 20px; border-radius: 8px; }
+        aside { flex: 1; background: #eee; padding: 20px; border-radius: 8px; }
+        
+        header { text-align: center; padding: 20px; background: white; }
+        header img { max-width: 150px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Jornal Digital</h1>
+        <img src="imagem espaço.jpg" alt="Logotipo do Jornal">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Brasil</a></li>
+            <li><a href="#">Mundo</a></li>
+            <li><a href="#">Tecnologia</a></li>
+        </ul>
+    </nav>
+
+    <main style="display: flex;">
+        <section style="flex: 3;">
+            <article>
+                <h2>Notícia 1: Avanços na IA</h2>
+                <p>Com o desenvolvimento de novas ferramentas, espera-se que a IA transforme setores como saúde e finanças, trazendo eficiência e inovação.
+                A biomedicina e o design de medicamentos são áreas que devem se beneficiar significativamente..</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Notícia 2: Esportes hoje</h2>
+                <p>2. O campeonato regional começa neste final de semana, com destaque para:
+             - *Campeonatos Estaduais*: Começam no dia 6 de janeiro, incluindo os estaduais do Paraná, Santa Catarina e Ceará. Outros campeonatos, 
+            como o Paulista e o Carioca, têm início logo em seguida, em 11 e 14 de janeiro, respectivamente.
+</p>
+            </article>
+            <hr>
+            <article>
+                <h2>Notícia 3: Previsão do Tempo</h2>
+                <p>Uma frente fria deve atingir o sul do Brasil na próxima terça-feira, trazendo temperaturas mais baixas e possibilidade de chuvas.
+                    É bom se preparar para um clima mais frio!</p>
+            </article>
+        </section>
+
+        <aside style="flex: 1; margin-left: 20px;">
+            <h3>Destaques</h3>
+            <p>Anúncio ou links secundários aqui.
+            https://www.olympics.com/pt/noticias/campeonatos-estaduais-2026-calendario
+            </p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portal de Notícias - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
