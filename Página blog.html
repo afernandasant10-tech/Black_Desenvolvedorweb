@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Leitura</title>
+    <style>
+        /* Estilização básica para visualizar melhor o layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        header, nav, footer {
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* --- Configuração do Layout Flexbox (Questão 8) --- */
+        main {
+            display: flex;
+            gap: 20px;
+        }
+
+        section {
+            flex: 3; /* O conteúdo principal ocupa mais espaço */
+            background-color: #ededee;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        aside {
+            flex: 1; /* A lateral ocupa menos espaço */
+            background-color: #fafafa;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+
+        /* --- RESOLUÇÃO DA QUESTÃO 9: Media Query --- */
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column; /* Transforma o layout em vertical (coluna) */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog de Leitura</h1>
+    <p>Dicas diárias sobre Livros</p>
+</header>
+
+<nav>
+    <a href="#">Início</a> | <a href="#">Tutoriais</a> | <a href="#">Contato</a>
+</nav>
+
+<main>
+    <section>
+        <article>
+            <h2>Como aprender HTML Semântico</h2>
+            <p>Postado em 15 de Outubro</p>
+            <p>O HTML semântico é essencial para criar páginas mais acessíveis e que ajudam os buscadores a entenderem melhor o conteúdo, 
+                melhorando assim a SEO do seu site.</p>
+        </article>
+    </section>
+
+    <aside>
+        <h3>Sobre mim</h3>
+        <p>Sou estudante de Licenciatura em Computação e aprendendo programação,gosto de leitura. Adoro compartilhar dicas de livros que me inspiram.</p>
+    </aside>
+</main>
+
+<footer>
+    <p>Criado por Fernanda Santos - 2024</p>
+</footer>
