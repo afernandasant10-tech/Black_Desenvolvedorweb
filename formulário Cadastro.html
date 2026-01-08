@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <style>
+    /* Estilo geral da tabela e bordas externas/internas */
+    #tabela-dados {
+        width: 100%;
+        border-collapse: collapse; /* Garante que as bordas sejam únicas */
+        margin-top: 20px;
+    }
+
+    #tabela-dados th, #tabela-dados td {
+        border: 1px solid rgb(24, 94, 163); /* Aplica bordas internas e externas */
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Destaque do cabeçalho com outra cor */
+    #tabela-dados thead th {
+        background-color: #0a3d0b;
+        color: rgb(239, 233, 233);
+    }
+
+    /* Alternar a cor das linhas (Zebra) */
+    #tabela-dados tbody tr:nth-child(even) {
+        background-color: #f8f1f1;
+    }
+</style>
+</head>
+<body>
+
+    <h1>Formulario de Cadastro</h1>
+
+    <form action="#" method="post">
+        
+        <h3>Dados Pessoais</h3>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br>
+
+        <h3>Data</h3>
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento"><br>
+
+        <h3>Seleção</h3>
+        <label for="pais">Pais:</label>
+        <select id="pais" name="pais">
+            <option value="">Selecione um pais</option>
+            <option value="brasil">Brasil</option>
+            <option value="portugal">Portugal</option>
+            <option value="outros">Outros</option>
+        </select><br>
+
+        <h3>Aula de Inglês</h3>
+        <label for="curso">Tipo de Curso:</label>
+        <select id="curso" name="curso">
+            <option value="conversacao">Conversação</option>
+            <option value="gramatica">Gramática</option>
+            <option value="negocios">Business (Negócios)</option>
+        </select>
+
+        <p>Nível (Escolha 1):</p>
+        <input type="radio" id="basico" name="nivel" value="basico">
+        <label for="basico">Básico</label>
+        <input type="radio" id="intermediario" name="nivel" value="intermediario">
+        <label for="intermediario">Intermediário</label>
+        <input type="radio" id="avancado" name="nivel" value="avancado">
+        <label for="avancado">Avançado</label>
+
+        <p>Turnos disponíveis:</p>
+        <input type="checkbox" id="manha" name="turno" value="manha">
+        <label for="manha">Manhã</label>
+        <input type="checkbox" id="tarde" name="turno" value="tarde">
+        <label for="tarde">Tarde</label>
+        <input type="checkbox" id="noite" name="turno" value="noite">
+        <label for="noite">Noite</label><br>
+
+        <h3>Escolhas</h3>
+        <p>Gênero (Escolha somente 1)</p>
+        <input type="radio" id="masc" name="genero" value="masculino">
+        <label for="masc">Masculino</label>
+        
+        <input type="radio" id="fem" name="genero" value="feminino">
+        <label for="fem">Feminino</label>
+        
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Outro</label><br>
+
+        <h3>Interesses</h3>
+        <input type="checkbox" id="esportes" name="interesses" value="esportes">
+        <label for="esportes">Esportes</label>
+
+        <input type="checkbox" id="musica" name="interesses" value="musica">
+        <label for="musica">Música</label>
+
+        <input type="checkbox" id="leitura" name="interesses" value="leitura">
+        <label for="leitura">Leitura</label><br><br>
+
+        <button type="submit">Cadastrar</button>
+
+        <button type="reset">Limpar</button>
+
+    </form>
+
+    <hr>
+    <h2>Lista de alunos cadastrado</h2>
+    <table id="tabela-dados">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Nível</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana vitoria</td>
+                <td>ana.vit@email.com</td>
+                <td>Avançado</td>
+            </tr>
+            <tr>
+                <td>joão lucas</td>
+                <td>joao.lu@email.com</td>
+                <td>Básico</td>
+            </tr>
+            <tr>
+                <td>Maria eduarda</td>
+                <td>maria.ed@email.com</td>
+                <td>Intermediário</td>
+            </tr>
+            <tr>
+                <td>Carlos costa</td>
+                <td>carlos.cos@email.com</td>
+                <td>Avançado</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
