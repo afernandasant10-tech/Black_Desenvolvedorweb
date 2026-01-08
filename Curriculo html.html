@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Currículo - Antonia Fernanda</title>
+    <style>
+        body {
+            background: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            text-align: center; 
+            font-family: sans-serif;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* --- CÓDIGO DO EXERCÍCIO 8 --- */
+        #container-flex {
+            display: flex;               /* Ativa o flexbox */
+            flex-direction: row;         /* Itens em linha */
+            align-items: center;         /* Centraliza verticalmente */
+            justify-content: space-between; /* Distribui o espaço entre eles */
+            
+            /* Estilos extras para visualização */
+            background: #eee;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        #container-flex > div {
+            flex-shrink: 1;              /* Garante que os itens encolham proporcionalmente */
+            padding: 10px;
+            background: #ddd;
+            border-radius: 4px;
+        }
+        /* ----------------------------- */
+
+        h1, h2, p, ul {
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+     section {
+            text-align: left; /* Melhora a leitura do texto das seções */
+            padding: 0 20px;
+        }
+
+        header h1 {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="imagem.jpeg" alt="Foto de Fernanda">
+        <h1>Antonia Fernanda Santos do Nascimento</h1>
+        <p><strong>aprendendo</strong></p>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <p>Sou estudante de Licenciatura em Computação e atualmente aprendendo as bases do desenvolvimento web.
+            Embora eu não me considere muito boa em programação, tenho grande interesse pela educação e tecnologia.
+            Acredito que essas experiências contribuirão para meu crescimento profissional e quem sabe futuramente me abrirão novas oportunidades.</p>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Acadêmica</h2>
+            <ul>
+                <li><strong>Licenciatura em computação</strong><br>
+                    Instituição XYZ | 2022 - 2026</li>
+                <li><strong>Curso de Desenvolvimento Web</strong><br>
+                    Plataforma Online | 2023</li>
+                <li><strong>Ensino Médio Completo </strong><br>
+                    Escola Pública | 2021</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section>
+            <h2>Profissional</h2>
+            <p><strong>Monitor em escola pública</strong> - Empresa XXX (2024-2026)</p>
+            <ul>
+                <li>Auxílio no ensino fundamental e médio.</li>
+                <li>Levar o conhecimento que adquiri para facilitar o aprendizado dos outros.</li>
+            </ul>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Email: <a href="mailto:Forever.mento22@gmail.com">Forever.mento22@gmail.com</a></p>
+        <p>Telefone: (21) 91983-420100</p>
+        <p>GitHub: <a href="https://github.com/afernandasant10-tech" target="_blank" rel="noopener noreferrer">https://github.com/afernandasant10-tech</a></p>
+    </footer>
+
+</body>
+</html>
