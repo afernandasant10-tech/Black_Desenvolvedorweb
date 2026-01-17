@@ -1,0 +1,18 @@
+/* 7. Aparência da tabela #tabela-dados */
+#tabela-dados {
+    border-collapse: collapse;  /* Colapsa as bordas */
+    width: 100%;
+}
+
+#tabela-dados border, #tabela-dados th, #tabela-dados td {
+    border: 1px solid black;    /* Bordas externas e internas [cite: 32] */
+}
+
+#tabela-dados tr:nth-child(even) {
+    background-color: #e0e0e0;  /* Alterna cor das linhas pares [cite: 33] */
+}
+
+#tabela-dados th {
+    background-color: #333;     /* Destaque do cabeçalho [cite: 34] */
+    color: white;
+}
