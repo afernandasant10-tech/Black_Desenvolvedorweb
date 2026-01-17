@@ -1,0 +1,6 @@
+/* 9. Responsividade (Media Query) */
+@media (max-width: 600px) {
+    #container-flex {
+        flex-direction: column; /* Transforma layout em coluna [cite: 42] */
+    }
+}
