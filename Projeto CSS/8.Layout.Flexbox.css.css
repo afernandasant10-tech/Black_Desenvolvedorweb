@@ -1,0 +1,11 @@
+/* 8. Layout Flexbox */
+#container-flex {
+    display: flex;              /* Ativa flexbox */
+    flex-direction: row;        /* Itens em linha [cite: 36] */
+    align-items: center;        /* Centraliza verticalmente [cite: 38] */
+    justify-content: space-between; /* Distribui espaço entre eles [cite: 40] */
+}
+
+#container-flex > div {
+    flex-shrink: 1;             /* Garante que os itens encolham proporcionalmente [cite: 41] */
+}
