@@ -1,0 +1,13 @@
+/* 6. Estilização de links */
+a {
+    color: blue;                /* Cor padrão [cite: 27] */
+    text-decoration: none;      /* Remoção do sublinhado [cite: 29] */
+}
+
+a:hover {
+    color: darkred;             /* Cor ao passar o mouse [cite: 28] */
+}
+
+a:visited {
+    color: purple;              /* Cor após visitado [cite: 26] */
+}
