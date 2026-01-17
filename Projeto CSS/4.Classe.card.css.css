@@ -1,0 +1,8 @@
+/* 4. Classe .card para caixas de conteúdo */
+.card {
+    background-color: white;    /* Fundo branco [cite: 15] */
+    border-radius: 8px;         /* Borda arredondada [cite: 16] */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Sombra leve [cite: 17] */
+    padding: 20px;              /* Espaçamento interno [cite: 19] */
+    margin-bottom: 15px;        /* Margem inferior [cite: 20] */
+}
