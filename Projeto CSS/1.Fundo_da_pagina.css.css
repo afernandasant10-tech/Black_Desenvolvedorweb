@@ -1,0 +1,6 @@
+p {
+    color: #444; /* Um cinza escuro para não cansar os olhos */
+    line-height: 1.6;
+    text-align: justify; /* Alinha o texto dos dois lados */
+    margin-top: 20px;
+}
