@@ -1,0 +1,10 @@
+/* 5. Menu horizontal */
+#menu {
+    list-style-type: none;      /* Remove os marcadores [cite: 22] */
+    padding: 0;
+    display: flex;              /* Alinha os itens lado a lado [cite: 23] */
+}
+
+#menu li {
+    margin-right: 15px;         /* Espaçamento entre os itens [cite: 24] */
+}
