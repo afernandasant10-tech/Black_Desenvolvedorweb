@@ -1,0 +1,6 @@
+/* 2. Formatação dos títulos h1 */
+h1 {
+    text-align: center;         /* Centralizado [cite: 7] */
+    color: darkblue;            /* Azul escuro [cite: 8] */
+    font-family: Arial, sans-serif; /* Fonte Arial ou sans-serif [cite: 9] */
+}
