@@ -1,0 +1,14 @@
+/* 10. Botão estilizado .btn */
+.btn {
+    background-color: #77b1ee;  /* Cor de fundo [cite: 47] */
+    color: white;               /* Cor do texto [cite: 48] */
+    padding: 10px 20px;         /* Padding [cite: 49] */
+    border-radius: 5px;         /* Bordas arredondadas [cite: 50] */
+    cursor: pointer;            /* Cursor pointer [cite: 51] */
+    border: none;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;  /* Efeito hover com alteração de cor [cite: 52] */
+}
