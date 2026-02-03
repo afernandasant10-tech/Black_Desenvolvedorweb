@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 04</title>
+</head>
+<body>
+
+<script>
+    let temperatura = Number(prompt("Digite a temperatura:"));
+    let opcao = prompt("Digite C para converter para Celsius ou F para Fahrenheit:");
+
+    if (opcao === "C" || opcao === "c") {
+        let celsius = (temperatura - 32) * 5 / 9;
+        alert("Temperatura em Celsius: " + celsius);
+    } 
+    else if (opcao === "F" || opcao === "f") {
+        let fahrenheit = (temperatura * 9 / 5) + 32;
+        alert("Temperatura em Fahrenheit: " + fahrenheit);
+    } 
+    else {
+        alert("Opção inválida!");
+    }
+</script>
+
+</body>
+</html>
