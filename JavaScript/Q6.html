@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 06</title>
+</head>
+<body>
+
+<script>
+    let N = Number(prompt("Digite um número inteiro:"));
+
+    for (let num = 2; num <= N; num++) {
+        let primo = true;
+
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {
+                primo = false;
+                break;
+            }
+        }
+
+        if (primo) {
+            console.log(num);
+        }
+    }
+</script>
+
+</body>
+</html>
