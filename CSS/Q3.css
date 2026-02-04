@@ -1,0 +1,5 @@
+p {
+    text-align: justify;    /* Texto justificado */
+    font-size: 16px;        /* Tamanho da fonte */
+    line-height: 1.5;       /* Espaçamento entre linhas */
+}
