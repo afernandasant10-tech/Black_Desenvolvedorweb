@@ -1,0 +1,24 @@
+.btn {
+    /* Cor de fundo e do texto */
+    background-color: #3498db;
+    color: white;
+
+    /* Espaçamento interno (padding) */
+    padding: 12px 24px;
+
+    /* Bordas arredondadas */
+    border-radius: 8px;
+
+    /* Cursor de mãozinha ao passar o mouse */
+    cursor: pointer;
+
+    /* Estilos extras para o botão parecer moderno */
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Suaviza a troca de cor */
+}
+
+/* Efeito hover com alteração de cor */
+.btn:hover {
+    background-color: #2980b9;
+}
