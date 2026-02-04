@@ -1,0 +1,166 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário</title>
+        <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        form {
+            max-width: 500px;
+        }
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+    </head>
+    <body>
+
+        <h1>Formulário de Cadastro</h1>
+
+        <form action="#" method="post">
+            
+            <fieldset>
+                <legend>Dados de Acesso</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações Temporais</legend>
+                <label for="nascimento">Data de Nascimento:</label>
+                <input type="date" id="nascimento" name="nascimento">
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências</legend>
+                <label for="pais">País de Origem:</label>
+                <select id="pais" name="pais">
+                    <option value="">Selecione...</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="portugal">Portugal</option>
+                    <option value="outros">Outros</option>
+                </select>
+
+                <label for="curso">Tipo de Curso:</label>
+                <select id="curso" name="curso">
+                    <option value="conversacao">Conversação</option>
+                    <option value="gramatica">Gramática</option>
+                    <option value="negocios">Business</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Perfil e Horários</legend>
+                
+                <p>Nível de Inglês (Radio):</p>
+                <input type="radio" id="basico" name="nivel" value="basico">
+                <label for="basico">Básico</label>
+                <input type="radio" id="intermediario" name="nivel" value="intermediario">
+                <label for="intermediario">Intermediário</label>
+                <input type="radio" id="avancado" name="nivel" value="avancado">
+                <label for="avancado">Avançado</label>
+
+                <p>Turnos Disponíveis (Checkbox):</p>
+                <input type="checkbox" id="manha" name="turno" value="manha">
+                <label for="manha">Manhã</label>
+                <input type="checkbox" id="tarde" name="turno" value="tarde">
+                <label for="tarde">Tarde</label>
+                <input type="checkbox" id="noite" name="turno" value="noite">
+                <label for="noite">Noite</label>
+            </fieldset>
+
+             <fieldset>
+        <legend>Esportes</legend>
+
+        <p><strong>Quais esportes você pratica?</strong></p>
+
+        <input type="checkbox" id="futebol" name="esportes[]" value="futebol">
+        <label for="futebol">Futebol</label>
+
+        <input type="checkbox" id="volei" name="esportes[]" value="volei">
+        <label for="volei">Vôlei</label>
+
+        <input type="checkbox" id="basquete" name="esportes[]" value="basquete">
+        <label for="basquete">Basquete</label>
+
+        <input type="checkbox" id="natacao" name="esportes[]" value="natacao">
+        <label for="natacao">Natação</label>
+             </fieldset>
+
+            <button type="submit">Cadastrar Aluno</button>
+            <button type="reset" style="background-color: #eee;">Limpar</button>
+
+        </form>
+
+        <hr>
+
+        <h2>Lista de Alunos Cadastrados</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Nível</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Vitória</td>
+                    <td>ana.vit@email.com</td>
+                    <td>Avançado</td>
+                </tr>
+                <tr>
+                    <td>João Lucas</td>
+                    <td>joao.lu@email.com</td>
+                    <td>Básico</td>
+                </tr>
+                <tr>
+                    <td>Maria Eduarda</td>
+                    <td>maria.ed@email.com</td>
+                    <td>Intermediário</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </body>
+    </html>
