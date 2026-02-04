@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Espaço, Natureza e Arte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+
+        .frase {
+            display: block;
+            font-style: italic;
+            margin-bottom: 15px;
+            color: #cccccc;
+        }
+
+        img {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #4da6ff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #333;
+            margin: 40px 0;
+        }
+
+        .credito {
+            font-size: 0.9em;
+            color: #aaaaaa;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>Espaço</h2>
+        <span class="frase">"Onde o infinito começa e a nossa curiosidade nunca termina."</span>
+        <img src="/HTML/Imagem/Espaço.jpg" 
+             alt="Nebulosa no espaço" 
+             width="500">
+        <p>
+            <a href="https://cdn.esahubble.org/archives/images/screen/heic1608a.jpg" target="_blank">
+                Ver detalhes do universo
+            </a>
+        </p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Arte – Vincent van Gogh</h2>
+        <span class="frase">"A natureza vista através das cores intensas e da emoção."</span>
+        <img src="/HTML/Imagem/Van gogh.jpg" 
+             alt="Obra de Vincent van Gogh inspirada na natureza" 
+             width="500">
+        <p>
+            <a href="https://wallpaperaccess.com/full/3012.jpg" target="_blank">
+                Ver obra em tamanho real
+            </a>
+        </p>
+        <p class="credito">Obra de Vincent van Gogh (1853–1890)</p>
+    </section>
+
+    <hr>
+
+    <section>
+        <h2>Referência Visual</h2>
+        <span class="frase">"A força e o mistério da vida selvagem em um único registro."</span>
+        <a href="https://conteudo.imguol.com.br/c/noticias/eb/2020/07/25/leopardo-e-pantera-negra-em-foto-rara-1595685292281_v2_450x600.jpg" target="_blank">
+            <img src="https://conteudo.imguol.com.br/c/noticias/eb/2020/07/25/leopardo-e-pantera-negra-em-foto-rara-1595685292281_v2_450x600.jpg" 
+                 alt="Leopardo e Pantera Negra" 
+                 width="300">
+        </a>
+    </section>
+
+</body>
+</html>
