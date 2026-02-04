@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Jornal Digital</title>
+    <style>
+        /* Configurações de Reset e Cores */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        /* Cabeçalho */
+        header {
+            background-color: #44607b;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 6px solid #00a859; /* Verde Amazônia */
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header img {
+            max-width: 120px;
+            border-radius: 50%;
+            background: white;
+            padding: 5px;
+        }
+
+        /* Menu de Navegação */
+        nav {
+            background: #222;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav li a:hover {
+            background-color: #00a859;
+            color: white;
+        }
+
+        /* Layout Principal */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 25px;
+            padding: 0 20px;
+        }
+
+        /* Artigos */
+        article {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: #003366;
+            color: white;
+            padding: 5px 12px;
+            font-size: 0.75rem;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .tag-para {
+            background: #e67e22; /* Laranja para destaque cultural */
+        }
+
+        article h2 {
+            margin-bottom: 15px;
+            color: #1a1a1a;
+            font-size: 1.8rem;
+        }
+
+        article p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* Barra Lateral (Aside) */
+        aside {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            height: fit-content;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        aside h3 {
+            border-bottom: 2px solid #003366;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .btn-link {
+            display: block;
+            text-align: center;
+            background: #003366;
+            color: white;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn-link:hover {
+            background: #0055aa;
+        }
+
+        /* Rodapé */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #222;
+            color: #ccc;
+            margin-top: 50px;
+        }
+
+        /* Ajustes para Telas Pequenas */
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+            header h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Jornal Digital</h1>
+        <img src="" alt="Logotipo do Jornal">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Brasil</a></li>
+            <li><a href="#">Mundo</a></li>
+            <li><a href="#">Tecnologia</a></li>
+            <li><a href="#">Cultura Paraense</a></li>
+        </ul>
+    </nav>
+
+  <main>
+    <section>
+        <article>
+            <span class="category-tag tag-para">Cultura & Gastronomia</span>
+            <h2>Pará conquista o Brasil com sabores únicos da Amazônia</h2>
+            <p>
+                A cultura paraense segue ganhando destaque nacional e internacional por meio de sua gastronomia rica e cheia de identidade.
+                Pratos tradicionais como <strong>tacacá</strong>, <strong>pato no tucupi</strong> e o tradicional <strong>açaí com peixe frito</strong>
+                representam a herança indígena e amazônica presente na culinária local.
+            </p>
+            <p>
+                Além da comida, manifestações culturais como o <strong>Círio de Nazaré</strong> e o <strong>carimbó</strong>
+                fortalecem a identidade do povo paraense, mantendo vivas tradições que atravessam gerações.
+            </p>
+        </article>
+
+        <article>
+            <span class="category-tag">Tecnologia</span>
+            <h2>Inteligência Artificial avança e transforma áreas essenciais em 2026</h2>
+            <p>
+                O avanço da Inteligência Artificial em 2026 tem impactado diretamente setores como saúde, educação e finanças.
+                Novas ferramentas vêm auxiliando no diagnóstico médico, na análise de dados e até no desenvolvimento de medicamentos.
+            </p>
+            <p>
+                Especialistas apontam que o uso responsável da IA pode melhorar a qualidade de vida da população,
+                desde que acompanhado de ética e regulamentação adequada.
+            </p>
+        </article>
+
+        <article>
+            <span class="category-tag">Esportes</span>
+            <h2>Campeonatos estaduais movimentam o futebol brasileiro</h2>
+            <p>
+                Os campeonatos estaduais de 2026 começam a agitar os torcedores em todo o país,
+                reunindo clubes tradicionais e novos talentos do futebol brasileiro.
+            </p>
+            <ul style="margin-left: 20px;">
+                <li><strong>Estaduais:</strong> início a partir de 06 de janeiro.</li>
+                <li><strong>Paulista e Carioca:</strong> começam nos dias 11 e 14 de janeiro.</li>
+            </ul>
+        </article>
+
+        <article>
+            <span class="category-tag">Clima</span>
+            <h2>Previsão do tempo indica mudanças em diferentes regiões do país</h2>
+            <p>
+                Uma frente fria deve atingir a região Sul do Brasil nos próximos dias,
+                provocando queda de temperatura e aumento das chuvas.
+            </p>
+            <p>
+                No Norte do país, a previsão continua sendo de calor com pancadas de chuva isoladas,
+                características do clima amazônico nesta época do ano.
+            </p>
+        </article>
+    </section>
+
+    <aside>
+    <h3>Destaques</h3>
+
+    <p style="margin-bottom: 10px; font-size: 0.9rem;">
+        Confira informações importantes e conteúdos em destaque desta semana:
+    </p>
+
+    <a href="https://www.olympics.com/pt/noticias/campeonatos-estaduais-2026-calendario" 
+       class="btn-link" target="_blank">
+        📅 Calendário dos Estaduais 2026
+    </a>
+
+    <div style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h4>🎭 Dica Cultural</h4>
+        <p>
+            <small>
+                O <strong>Círio de Nazaré</strong> é uma das maiores manifestações religiosas do Brasil.
+                Em outubro, Belém recebe milhares de fiéis e turistas de todo o mundo.
+                Visite o Museu do Círio e conheça essa tradição.
+            </small>
+        </p>
+    </div>
+    
+    <div style="margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px;">
+        <h4>🌅 Dica de Passeio</h4>
+        <p>
+            <small>
+                Aproveite o pôr do sol na <strong>Estação das Docas</strong>, em Belém.
+                Um espaço que reúne história, gastronomia e uma vista incrível do Rio Guamá.
+            </small>
+        </p>
+    </div>
+</aside>
