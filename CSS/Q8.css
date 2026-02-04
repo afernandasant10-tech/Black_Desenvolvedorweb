@@ -1,0 +1,68 @@
+/* Configurações Globais */
+body {
+    background-color: #f4f7f6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* O CONTAINER (Resposta da Questão) */
+#container-flex {
+    display: flex;               /* Itens em linha */
+    align-items: center;         /* Centraliza verticalmente */
+    justify-content: space-between; /* Distribui espaço entre eles */
+    
+    width: 100%;
+    max-width: 900px;
+    min-height: 350px;           /* Altura para notar a centralização */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* OS ITENS / CARDS (Resposta da Questão) */
+#container-flex > div {
+    flex-shrink: 1;              /* Garante que os itens encolham proporcionalmente */
+    flex-basis: 250px;           /* Largura sugerida para os cards */
+    margin: 10px;
+    
+    /* Estilização Visual */
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 30px 20px;
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;   /* Animação suave */
+}
+
+/* Efeito de destaque ao passar o mouse */
+#container-flex > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-color: #007bff;
+}
+
+/* Estilo dos ícones e textos internos */
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin: 10px 0;
+    color: #007bff;
+}
+
+p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
