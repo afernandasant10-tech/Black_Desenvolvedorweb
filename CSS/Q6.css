@@ -1,0 +1,12 @@
+a {
+    color: blue;             /* Cor padrão */
+    text-decoration: none;   /* Remove o sublinhado */
+}
+
+a:hover {
+    color: red;              /* Cor ao passar o mouse (exemplo) */
+}
+
+a:visited {
+    color: purple;           /* Cor para links já visitados */
+}
