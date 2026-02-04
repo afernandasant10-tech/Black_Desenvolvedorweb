@@ -1,0 +1,7 @@
+.card {
+    background-color: white;         /* Fundo branco */
+    border-radius: 8px;              /* Borda arredondada */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra leve */
+    padding: 20px;                   /* Espaçamento interno */
+    margin-bottom: 15px;             /* Margem inferior */
+}
