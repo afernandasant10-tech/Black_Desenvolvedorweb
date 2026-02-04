@@ -1,0 +1,20 @@
+#menu {
+    /* 1. Remove os marcadores (bolinhas) */
+    list-style-type: none;
+    
+    /* Remove preenchimentos padrão do navegador */
+    padding: 0;
+    margin: 0;
+
+    /* 2. Alinha os itens lado a lado usando Flexbox */
+    display: flex;
+
+    /* 3. Aplica espaçamento de 15px entre os itens */
+    gap: 15px;
+}
+
+/* Opcional: Estilização para os links ficarem mais bonitos */
+#menu a {
+    text-decoration: none;
+    color: blue;
+}
