@@ -1,0 +1,18 @@
+#tabela-dados {
+    border-collapse: collapse; /* Garante bordas únicas */
+    width: 100%;
+}
+
+#tabela-dados th, #tabela-dados td {
+    border: 1px solid #ccc;    /* Bordas externas e internas */
+    padding: 8px;
+}
+
+#tabela-dados tr:nth-child(even) {
+    background-color: #f9f9f9; /* Altera cor das linhas pares */
+}
+
+#tabela-dados th {
+    background-color: #333;    /* Destaque do cabeçalho */
+    color: white;
+}
